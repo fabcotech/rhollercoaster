@@ -1,9 +1,10 @@
 ### Rholler coaster
 
-Fun tutorial on RChain + nodeJS. Learn to: deploy on rnode, predict unforgeable names, retreive data on names, convert data to javascript readable variables, execute explore-deploy (free read-only deploy), use the registry to have data easily retreivable.
+![rholler coaster](https://raw.githubusercontent.com/fabcotech/rhollercoaster/main/rhollercoaster.jpg)
+
+Easy tutorial on RChain + nodeJS, all basic development usecases are covered. Learn to: deploy on rnode, predict unforgeable names, retreive data on names, convert data to javascript readable variables, execute explore-deploy (free read-only deploy), use the registry to have data easily retreivable.
 
 Guide to first deploy and interact with rholang/RChain.
-
 
 - step 01: deploy on rnode
 - step 02: prepare deploy before deploying, and then get data onchain
