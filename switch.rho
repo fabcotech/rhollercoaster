@@ -1,0 +1,21 @@
+new basket, lightCh, switchCh, uriCh, insertArbitrary(`rho:registry:insertArbitrary`) in {
+
+  lightCh!("off") |
+  insertArbitrary!(bundle+{*switchCh}, *uriCh) |
+  for (@uri <- uriCh) {
+    basket!({ "status": "completed", "uri": uri })
+  } |
+
+  for (@("get", return) <= switchCh) {
+    for (@value <<- lightCh) {
+      @return!(value)
+    }
+  } |
+
+  for (@("set", value, return) <= switchCh) {
+    for (_ <- lightCh) {
+      lightCh!(value) |
+      @return!({ "status": "completed" })
+    }
+  }
+}
