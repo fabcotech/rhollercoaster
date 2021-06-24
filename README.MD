@@ -10,7 +10,8 @@ Guide to first deploy and interact with rholang/RChain.
 - step 02: prepare deploy before deploying, and then get data onchain
 - step 03: decoding the data with rchain-toolkit
 - step 04: using the registry instead of unforgeable name
-- step 05: using explore-deploy to read from registry
+- step 05: getting value through registry
+- step 06: setting value through registry
 
 ##### Setup
 
